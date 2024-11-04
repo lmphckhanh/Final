@@ -1,6 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#DEEBFF">
+
+
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Account"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rounded_edit_text_background1"
+        android:gravity="center_vertical"
+        android:onClick="openLanguageSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="197dp"> <!-- sự kiện click -->
+
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:src="@drawable/account" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            android:gravity="fill_vertical"
+            android:text="Account and login"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow" />
+
+        <!-- Mũi tên chỉ sang phải -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="468dp"
+        android:layout_height="279dp"
+        app:srcCompat="@drawable/white"
+        tools:layout_editor_absoluteX="-36dp"
+        tools:layout_editor_absoluteY="-181dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="33dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="General"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rounded_edit_text_background1"
+        android:gravity="center_vertical"
+        android:onClick="openLanguageSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="341dp"> <!-- sự kiện click  -->
+
+
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:src="@drawable/language" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            android:gravity="fill_vertical"
+            android:text="Language"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/rounded_edit_text_background1"
+        android:gravity="center_vertical"
+        android:onClick="openLanguageSettings"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="427dp"> <!-- sự kiện click  -->
+
+
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:src="@drawable/notification" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+
+            android:gravity="fill_vertical"
+            android:text="Notifications"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
