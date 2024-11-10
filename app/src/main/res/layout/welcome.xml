@@ -5,24 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="902dp"
         android:layout_height="516dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/todoq"
         app:srcCompat="@drawable/frame"
-        tools:layout_editor_absoluteY="-48dp" />
+        tools:ignore="MissingConstraints,ImageContrastCheck"
+        tools:layout_editor_absoluteX="-246dp"
+        tools:layout_editor_absoluteY="-63dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="383dp"
         android:layout_height="69dp"
-        android:text="SIGN UP"
         android:fontFamily="@font/acme_regular"
+        android:text="@string/sign_up"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="577dp" />
 
@@ -30,7 +33,9 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/todo1"
         app:srcCompat="@drawable/group_6791"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="453dp" />
 
@@ -40,9 +45,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/acme_regular"
         android:gravity="center"
-        android:text="ALREADY HAVE AN ACCOUNT? LOGIN"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/already_have_an_account_login"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="95dp"
         tools:layout_editor_absoluteY="655dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

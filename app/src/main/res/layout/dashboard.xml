@@ -22,13 +22,15 @@
         android:layout_height="90dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="159dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
     <SearchView
         android:layout_width="363dp"
         android:layout_height="34dp"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
@@ -39,7 +41,8 @@
 
         android:textStyle="bold"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="58dp" />
+        tools:layout_editor_absoluteY="58dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView12"
@@ -49,7 +52,8 @@
         android:textSize="19sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="103dp" />
+        tools:layout_editor_absoluteY="103dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvName"
@@ -57,7 +61,8 @@
         android:layout_height="wrap_content"
         android:text="Name"
         tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteY="159dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/tvLocation"
@@ -65,7 +70,8 @@
         android:layout_height="wrap_content"
         android:text="Location"
         tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="193dp" />
+        tools:layout_editor_absoluteY="193dp"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/tvEmail"
@@ -73,20 +79,23 @@
         android:layout_height="wrap_content"
         android:text="Email"
         tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="230dp" />
+        tools:layout_editor_absoluteY="230dp"
+        tools:ignore="MissingConstraints"/>
 
     <LinearLayout
         android:layout_width="410dp"
         android:layout_height="138dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="138dp"></LinearLayout>
+        tools:layout_editor_absoluteY="138dp"
+        tools:ignore="MissingConstraints"></LinearLayout>
 
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="373dp"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="276dp">
+        tools:layout_editor_absoluteY="276dp"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
